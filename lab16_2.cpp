@@ -2,6 +2,12 @@
 using namespace std;
 
 //Write the definition of myString() here
+void myString(char * &x,int N){
+	x = new char[N];
+	for(int i=0;i<N;i++){
+		x[i] = 'A'+i;
+	}
+}
 
 int main(){
 	char *p;
